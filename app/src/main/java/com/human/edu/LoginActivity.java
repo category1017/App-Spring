@@ -21,36 +21,36 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Toast.makeText(LoginActivity.this,"onDestroy상태6",Toast.LENGTH_LONG).show();
+        //Toast.makeText(LoginActivity.this,"onDestroy상태6",Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Toast.makeText(LoginActivity.this,"onStop상태5",Toast.LENGTH_LONG).show();
+        //Toast.makeText(LoginActivity.this,"onStop상태5",Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Toast.makeText(LoginActivity.this,"onPause상태4",Toast.LENGTH_LONG).show();
+        //Toast.makeText(LoginActivity.this,"onPause상태4",Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Toast.makeText(LoginActivity.this,"onResume상태3",Toast.LENGTH_LONG).show();
+        //Toast.makeText(LoginActivity.this,"onResume상태3",Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Toast.makeText(LoginActivity.this,"onStart상태2",Toast.LENGTH_LONG).show();
+        //Toast.makeText(LoginActivity.this,"onStart상태2",Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Toast.makeText(LoginActivity.this,"onCreate상태1",Toast.LENGTH_LONG).show();
+        //Toast.makeText(LoginActivity.this,"onCreate상태1",Toast.LENGTH_LONG).show();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
