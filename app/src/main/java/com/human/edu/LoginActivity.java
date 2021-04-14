@@ -73,9 +73,12 @@ public class LoginActivity extends AppCompatActivity {
                     public void processFinish(String output) {//output은 스프링앱에서 전송받은 로그인 사용자 정보
                         Toast.makeText(LoginActivity.this, output+"디버그", Toast.LENGTH_SHORT).show();
                         String jsonString = output.substring(output.indexOf('{'),output.indexOf('}'));
+                        Log.i("디버그1",jsonString);
                         if(!jsonString.equals("{}")){//로그인 사용자 정보가 있으면
                             Log.i("디버그",jsonString);
                             //로그인 이후 액티비티를 여기서 띄우기
+                            Intent intent = new Intent(LoginActivity.this, SubActivity.class);
+                            startActivity(intent);
                         }else{
                             Toast.makeText(LoginActivity.this, "로그인 실패", Toast.LENGTH_LONG).show();
                         }
